@@ -13,7 +13,7 @@ server:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
 
 spring:
-    profiles: dev
+   profiles: dev
    application:
     name: microservicecloud-config-dept-client
    datasource:
