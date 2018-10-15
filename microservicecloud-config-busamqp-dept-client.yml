@@ -26,7 +26,7 @@ spring:
       min-idle: 5                                           # 数据库连接池的最小维持连接数
       initial-size: 5                                       # 初始化连接数
       max-total: 5                                          # 最大连接数
-      max-wait-millis: 200                                  # 等待连接获取的最大超时时间 
+      max-wait-millis: 200                                  # 等待连接获取的最大超时时间
    rabbitmq:
     host: localhost
     port: 5672
@@ -37,12 +37,6 @@ spring:
       enabled: true
       trace:
         enabled: true
-management:
-   endpoints:
-     web:
-      exposure:
-       include: bus-refresh
-
 
 eureka:
   client: #客户端注册进eureka服务列表内
@@ -57,6 +51,9 @@ info:
   company.name: www.my.com
   build.artifactId: ${project.artifactId}
   build.version: ${project.version}
+management:
+  security:
+    enabled: false
 ---
 server:
   port: 8001
@@ -85,11 +82,6 @@ spring:
       enabled: true
       trace:
         enabled: true
-management:
-   endpoints:
-     web:
-      exposure:
-       include: bus-refresh
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
@@ -110,3 +102,6 @@ info:
   company.name: www.my.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
+management:
+  security:
+    enabled: false
