@@ -74,11 +74,11 @@ eureka:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka
   instance:
-    instance-id: dept-8001bus.com
+    instance-id: dept-8001.com
     prefer-ip-address: true
 
 info:
-  app.name: mybus-microservicecloud-springcloudconfig02
+  app.name: my-microservicecloud-springcloudconfig02
   company.name: www.my.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
