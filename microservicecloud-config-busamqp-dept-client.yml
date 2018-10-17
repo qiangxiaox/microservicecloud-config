@@ -15,7 +15,7 @@ mybatis:
 spring:
    profiles: dev
    application:
-    name: microservicecloud-config-dept-client
+    name: microservicecloud-config-busamqp-dept-client
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
@@ -46,7 +46,7 @@ management:
     enabled: false
 ---
 server:
-  port: 8002
+  port: 8001
 spring:
    profiles: test
    application:
